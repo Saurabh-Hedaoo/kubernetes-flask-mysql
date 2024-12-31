@@ -18,6 +18,8 @@ spec:
       containers:
         - name: flaskapi
           image: saurabhhedaoo/k8sapplication:1.0
+      imagePullSecrets:
+        - name: my-registry-secret
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
