@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: flaskapi
-          image: flask-api
-          imagePullPolicy: Never
+          image: saurabhhedaoo/k8sapplication:1.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
           env:
